@@ -26,8 +26,6 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 		vec3 const& n_clicked = picked_normal;                         // normal of the surface (before deformation) at the picked position
 
 		float const dist = norm(p_clicked - p_shape_original);         // distance between the picked position and the vertex before deformation
-		if (k == 0)
-			std::cout << "connectivity du 0 = " << shape.connectivity[k] << std::endl;
 
 		// TO DO: Implement the deformation models
 		// **************************************************************** //
@@ -42,6 +40,7 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 			//   the following lines should be modified to get the expected smooth deformation
 			if (dist < r)
 				p_shape = p_shape_original + (1 - dist / r) * translation;
+
 		}
 		if (deformer_parameters.type == deform_translate_constante)
 		{
@@ -53,7 +52,7 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 		{
 			vec3 const translation = camera_orientation * vec3(translate_screen, 0.0f);
 			if (dist < r)
-				p_shape = p_shape_original + pow(1 - dist / r, 2) * translation;
+				p_shape = p_shape_original + pow(1 - dist / r, 4) * translation;
 		}
 		if (deformer_parameters.type == deform_translate_racine)
 		{
@@ -66,6 +65,18 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 			vec3 const translation = camera_orientation * vec3(translate_screen, 0.0f);
 			if (dist < r)
 				p_shape = p_shape_original + sinh(1 - dist / r) * translation;
+		}
+		if (deformer_parameters.type == deform_translate_Hugo)
+		{
+			vec3 const translation = camera_orientation * vec3(translate_screen, 0.0f);
+			if (dist < r)
+				p_shape = p_shape_original + pow(1 - pow(dist / r, 4), 4) * translation;
+		}
+		if (deformer_parameters.type == deform_translate_Leo)
+		{
+			vec3 const translation = camera_orientation * vec3(translate_screen, 0.0f);
+			if (dist < r)
+				p_shape = p_shape_original + (1-1/(1+5*(1 - dist / r))) * translation;
 		}
 		if (deformer_parameters.type == deform_twist)
 		{
