@@ -17,8 +17,14 @@ bool gui_parameters::display()
     new_surface |= ImGui::RadioButton("Mesh",ptr_surface_type, surface_mesh);
 
 	ImGui::Text("Deformer type:"); // Select the type of deformation to apply
+	ImGui::Text("Translate:");
 	int* ptr_deformer_type = (int*)&deformer_parameters.type;
-	ImGui::RadioButton("Translate",ptr_deformer_type, deform_translate); ImGui::SameLine();
+	ImGui::RadioButton("Linéaire",ptr_deformer_type, deform_translate); ImGui::SameLine();
+	ImGui::RadioButton("Constante",ptr_deformer_type, deform_translate_constante); ImGui::SameLine();
+	ImGui::RadioButton("Carré",ptr_deformer_type, deform_translate_carre); ImGui::SameLine();
+	ImGui::RadioButton("Racine",ptr_deformer_type, deform_translate_racine); ImGui::SameLine();
+	ImGui::RadioButton("Sinus Hyperbolique",ptr_deformer_type, deform_translate_sinus);
+	ImGui::Text("Other:");
     ImGui::RadioButton("Twist",ptr_deformer_type, deform_twist); ImGui::SameLine();
     ImGui::RadioButton("Scale",ptr_deformer_type, deform_scale);
 
