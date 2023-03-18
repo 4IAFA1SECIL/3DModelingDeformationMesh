@@ -2,3 +2,10 @@ imgui.ini
 modelisation.exe
 modelisation.pdb
 build
+.vscode/
+cgp/examples/02_marching_cubes/01_marching_cube_simple/01_marching_cube_simple.exe
+cgp/examples/02_marching_cubes/01_marching_cube_simple/01_marching_cube_simple.pdb
+cgp/examples/02_marching_cubes/02_marching_cube_dynamic/02_marching_cube_dynamic.exe
+cgp/examples/02_marching_cubes/02_marching_cube_dynamic/02_marching_cube_dynamic.pdb
+cgp/examples/02_marching_cubes/02_marching_cube_dynamic/mesh.obj
+modelisation/src/.vscode
