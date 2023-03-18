@@ -12,6 +12,7 @@ enum deformer_type_enum {
 	deform_translate_sinus,
 	deform_translate_Hugo,
 	deform_translate_Leo,
+	deform_translate_Loic,
 	deform_twist,
 	deform_scale
 };
@@ -25,6 +26,8 @@ struct deformer_parameters_structure {
 	deformer_type_enum type           = deform_translate;      // Type of deformation type
 	deformer_direction_enum direction = direction_view_space;  // Type of deformation direction
 	float falloff                     = 1 / 5.0f;              // Falloff/influence distance (can be adjusted from the GUI or with mouse scroll)
+	float n 						 = 4;                     // Exponent for the power function
+	float m 						 = 4;                     // Exponent for the power function
 };
 
 

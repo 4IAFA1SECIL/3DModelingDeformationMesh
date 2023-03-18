@@ -26,6 +26,9 @@ bool gui_parameters::display()
 	ImGui::RadioButton("Sinus Hyperbolique",ptr_deformer_type, deform_translate_sinus); ImGui::SameLine();
 	ImGui::RadioButton("Hugo",ptr_deformer_type, deform_translate_Hugo); ImGui::SameLine();
 	ImGui::RadioButton("Léo",ptr_deformer_type, deform_translate_Leo); 
+	ImGui::RadioButton("Loïc",ptr_deformer_type, deform_translate_Loic);
+	ImGui::SliderFloat("n", &deformer_parameters.n, 1.f, 10.f);
+	ImGui::SliderFloat("m", &deformer_parameters.m, 1.f, 10.f);
 	ImGui::Text("Other:");
     ImGui::RadioButton("Twist",ptr_deformer_type, deform_twist); ImGui::SameLine();
     ImGui::RadioButton("Scale",ptr_deformer_type, deform_scale);
