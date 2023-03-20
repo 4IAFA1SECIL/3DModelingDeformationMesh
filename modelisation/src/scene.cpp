@@ -2,6 +2,7 @@
 
 
 using namespace cgp;
+using namespace file_dialog;
 
 
 
@@ -118,6 +119,14 @@ void scene_structure::mouse_scroll_event()
 		gui.deformer_parameters.falloff = std::max(gui.deformer_parameters.falloff + float(inputs.mouse.scroll) * 0.01f, 1e-6f);
 }
 
+std::string scene_structure::save_mesh() {
+	// Save the current position of the vertices
+	saved_mesh_file = file_dialog::get_file(true);
+	if (!saved_mesh_file.empty())
+		cgp::save_file_obj(saved_mesh_file, deforming_shape.shape);
+	return saved_mesh_file;
+}
+
 void deforming_shape_structure::new_shape(surface_type_enum type_of_surface)
 {
 
@@ -138,7 +147,7 @@ void deforming_shape_structure::new_shape(surface_type_enum type_of_surface)
 		shape = initialize_cube();
 		break;
 	case surface_mesh:
-		shape = initialize_mesh();
+		shape = initialize_mesh(shape);
 		break;
 	}
 

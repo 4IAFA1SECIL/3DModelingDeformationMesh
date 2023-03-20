@@ -2,7 +2,10 @@
 #include "initialization.hpp"
 #include "../environment.hpp"
 
+#include "file_dialog.hpp"
+
 using namespace cgp;
+using namespace file_dialog;
 
 mesh initialize_plane()
 {
@@ -11,7 +14,7 @@ mesh initialize_plane()
 }
 mesh initialize_cylinder()
 {
-	float const h = 1.5f;
+	float const h = 1.5f; 
     float const radius = 0.4f;
     float const N_sample_circumferential = 80;
     float const N_sample_length = int( h/(2*3.14f*radius)*(N_sample_circumferential-1) + 1 + 0.5f );
@@ -28,12 +31,13 @@ mesh initialize_cube()
     int const N=40;
     return mesh_primitive_cubic_grid({0,0,0},{1,0,0},{1,1,0},{0,1,0}, {0,0,1},{1,0,1},{1,1,1},{0,1,1}, N, N, N);
 }
-mesh initialize_mesh()
+mesh initialize_mesh(mesh shape)
 {    
-    std::string const filename = project::path+"assets/face.obj";
-    mesh shape = mesh_load_file_obj(filename);
-    for(auto& p : shape.position) 
-        p *= 0.5f;
+    std::string mesh_path = file_dialog::get_file(false);
+    if (!mesh_path.empty()) {
+        shape = mesh_load_file_obj(mesh_path);
+        for(auto& p : shape.position)
+            p *= 1.f;
+    }
     return shape;
 }
-

@@ -18,7 +18,7 @@
 namespace cgp
 {
 
-    void mesh_save_file_obj(std::string const& filename, mesh const& m)
+    void save_file_obj(std::string const& filename, mesh const& m)
     {
         std::ofstream stream(filename, std::ofstream::out);
         assert_cgp(stream.is_open(), "Cannot open file " + str(filename));

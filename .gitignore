@@ -1,0 +1,6 @@
+# ignore 
+modelisation/assets/*.obj
+modelisation/build/
+
+# sauf fichier
+!modelisation/assets/face.obj

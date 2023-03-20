@@ -6,6 +6,12 @@
 
 enum deformer_type_enum {
 	deform_translate,
+	deform_translate_constante,
+	deform_translate_carre,
+	deform_translate_racine,
+	deform_translate_sinus,
+	deform_translate_Hugo,
+	deform_translate_Leo,
 	deform_twist,
 	deform_scale
 };
