@@ -1,4 +1,11 @@
+# ignore 
+modelisation/assets/*.obj
+modelisation/build/
 imgui.ini
 modelisation.exe
 modelisation.pdb
 build
+
+# sauf fichier
+!modelisation/assets/face.obj
+
