@@ -17,6 +17,8 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 
 
 	float const r = deformer_parameters.falloff; // radius of influence of the deformation
+	float const n = deformer_parameters.n; // exponent for the power function
+	float const m = deformer_parameters.m; // exponent for the power function
 	size_t const N = shape.position.size();
 	for (size_t k = 0; k < N; ++k)
 	{
@@ -78,9 +80,19 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 			if (dist < r)
 				p_shape = p_shape_original + (1-1/(1+5*(1 - dist / r))) * translation;
 		}
+		if (deformer_parameters.type == deform_translate_Loic)
+		{
+			vec3 const translation = camera_orientation * vec3(translate_screen, 0.0f);
+			if  ((pow(r,n*m))*pow((pow(r,n)-pow(dist,n)),m) == 0){
+				std::cout << "Division par 0" << std::endl;
+				break;
+			}else if (dist < r){
+				p_shape = p_shape_original + (1/(pow(r,n*m))*pow((pow(r,n)-pow(dist,n)),m)) * translation;
+			}
+		}
 		if (deformer_parameters.type == deform_twist)
 		{
-			// Deformation to implement
+			// Deformation to implement"
 		}
 		if (deformer_parameters.type == deform_scale)
 		{
