@@ -16,7 +16,7 @@
 
 #include "deformers/deformers.hpp"
 
-#include "helpers/file_dialog.hpp"
+#include "helpers/portable-file-dialogs.h"
 
 using cgp::mesh_drawable;
 
