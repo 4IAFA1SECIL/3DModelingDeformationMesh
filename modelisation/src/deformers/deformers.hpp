@@ -26,8 +26,10 @@ struct deformer_parameters_structure {
 	deformer_type_enum type           = deform_translate;      // Type of deformation type
 	deformer_direction_enum direction = direction_view_space;  // Type of deformation direction
 	float falloff                     = 1 / 5.0f;              // Falloff/influence distance (can be adjusted from the GUI or with mouse scroll)
-	float n 						 = 4;                     // Exponent for the power function
-	float m 						 = 4;                     // Exponent for the power function
+	float n 						  = 4;                     // Exponent for the power function
+	float m 						  = 4;                     // Exponent for the power function
+	bool remaillage                   = false;                 // Remaillage
+	float t 						  = 2.5;                     // Taille du remaillage
 };
 
 

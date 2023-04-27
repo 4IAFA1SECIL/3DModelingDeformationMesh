@@ -3,7 +3,7 @@
 
 using namespace cgp;
 
-
+size_t previous_size = 0;
 
 // The deformation is applied when the user move the mouse
 void scene_structure::mouse_move_event()
@@ -31,9 +31,26 @@ void scene_structure::mouse_move_event()
 			// Apply the deformation on the surface
 			apply_deformation(deforming_shape.shape, deforming_shape.position_saved, translation_screen, picking.position, picking.normal, camera_control.camera_model.orientation(), gui.deformer_parameters);
 
+			// // Update the visual model
+			// deforming_shape.visual.vbo_position.update(deforming_shape.shape.position);
+			// deforming_shape.require_normal_update = true;
+
 			// Update the visual model
-			deforming_shape.visual.vbo_position.update(deforming_shape.shape.position);
-			deforming_shape.require_normal_update = true;
+			if (deforming_shape.shape.position.size() > previous_size) {
+				// If the number of vertices has changed, we need to reinitialize the visual model
+				deforming_shape.visual.clear();
+				deforming_shape.visual.initialize_data_on_gpu(deforming_shape.shape);
+				deforming_shape.position_saved = deforming_shape.shape.position;
+				previous_size = deforming_shape.shape.position.size();
+				// deforming_shape.visual.vbo_position.update(deforming_shape.shape.position);
+				deforming_shape.require_normal_update = true;
+				// std::cout << "New size: " << previous_size << std::endl;
+			} else { 
+				// Otherwise, we can update the position and normal of the vertices
+				deforming_shape.visual.vbo_position.update(deforming_shape.shape.position);
+				// deforming_shape.visual.vbo_normal.update(deforming_shape.shape.normal);
+				deforming_shape.require_normal_update = true;
+			}
 		}
 
 	}
@@ -76,8 +93,9 @@ void scene_structure::display_frame()
 		deforming_shape.update_normal();
 
 	// Display of the circle of influence oriented along the local normal of the surface
-	if (picking.active)
+	if (picking.active){
 		picking_visual.draw(environment, deforming_shape.shape.position[picking.index], picking.normal, gui.deformer_parameters.falloff);
+	}
 
 }
 
@@ -146,6 +164,7 @@ void deforming_shape_structure::new_shape(surface_type_enum type_of_surface)
 	// Clear previous surface before seting the values of the new one
 	visual.clear();
 	visual.initialize_data_on_gpu(shape);
+	previous_size = shape.position.size();
 
 	position_saved = shape.position;
 	require_normal_update = false;

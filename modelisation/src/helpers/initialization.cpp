@@ -30,10 +30,10 @@ mesh initialize_cube()
 }
 mesh initialize_mesh()
 {    
-    std::string const filename = project::path+"assets/face.obj";
+    std::string const filename = project::path+"assets/cube.obj";
     mesh shape = mesh_load_file_obj(filename);
     for(auto& p : shape.position) 
-        p *= 0.5f;
+        p *= 1.0f;
     return shape;
 }
 

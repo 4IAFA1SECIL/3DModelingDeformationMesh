@@ -14,7 +14,7 @@ bool gui_parameters::display()
     new_surface |= ImGui::RadioButton("Cylinder",ptr_surface_type, surface_cylinder); ImGui::SameLine();
     new_surface |= ImGui::RadioButton("Sphere",ptr_surface_type, surface_sphere); ImGui::SameLine();
     new_surface |= ImGui::RadioButton("Cube",ptr_surface_type, surface_cube);  ImGui::SameLine();
-    new_surface |= ImGui::RadioButton("Mesh",ptr_surface_type, surface_mesh);
+    new_surface |= ImGui::RadioButton("Custom",ptr_surface_type, surface_mesh);
 
 	ImGui::Text("Deformer type:"); // Select the type of deformation to apply
 	ImGui::Text("Translate:");
@@ -24,14 +24,16 @@ bool gui_parameters::display()
 	ImGui::RadioButton("Carré",ptr_deformer_type, deform_translate_carre); ImGui::SameLine();
 	ImGui::RadioButton("Racine",ptr_deformer_type, deform_translate_racine); ImGui::SameLine();
 	ImGui::RadioButton("Sinus Hyperbolique",ptr_deformer_type, deform_translate_sinus); ImGui::SameLine();
-	ImGui::RadioButton("Hugo",ptr_deformer_type, deform_translate_Hugo); ImGui::SameLine();
-	ImGui::RadioButton("Léo",ptr_deformer_type, deform_translate_Leo); 
-	ImGui::RadioButton("Loïc",ptr_deformer_type, deform_translate_Loic);
+	ImGui::RadioButton("F1",ptr_deformer_type, deform_translate_Hugo); ImGui::SameLine();
+	ImGui::RadioButton("F2",ptr_deformer_type, deform_translate_Leo); 
+	ImGui::RadioButton("Modulaire",ptr_deformer_type, deform_translate_Loic);
 	ImGui::SliderFloat("n", &deformer_parameters.n, 1.f, 10.f);
 	ImGui::SliderFloat("m", &deformer_parameters.m, 1.f, 10.f);
 	ImGui::Text("Other:");
     ImGui::RadioButton("Twist",ptr_deformer_type, deform_twist); ImGui::SameLine();
-    ImGui::RadioButton("Scale",ptr_deformer_type, deform_scale);
+	ImGui::Text("");
+	ImGui::Checkbox("Remaillage", &deformer_parameters.remaillage);
+	ImGui::SliderFloat("taille", &deformer_parameters.t, 0.01f, 5.f);
 
 	ImGui::Text("Deformer direction:"); // Select the type of deformation to apply
 	int* ptr_deformer_direction = (int*)&deformer_parameters.direction;
