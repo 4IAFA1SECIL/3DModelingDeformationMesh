@@ -1,3 +1,0 @@
-D:/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/CMakeFiles/modelisation.dir
-D:/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/CMakeFiles/rebuild_cache.dir

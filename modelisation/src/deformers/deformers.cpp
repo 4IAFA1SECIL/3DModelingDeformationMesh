@@ -128,10 +128,21 @@ void apply_deformation(mesh& shape, numarray<vec3> const& position_before_deform
 		}
 		if (deformer_parameters.type == deform_twist)
 		{
-			// Deformation to implement"
-			if (deformer_parameters.remaillage){
+			if (dist < r) {
+                vec3 const translation = camera_orientation * vec3(translate_screen, 0.0f);
+                float angle;
+                if (translation.x >= 0.0f)
+                    angle = 2 * (1.0f - dist / r) * norm(translation);
+                else
+                    angle = -2 * (1.0f - dist / r) * norm(translation);
+                vec3 const p_to_p_clicked = p_shape_original - p_clicked;
+                rotation_transform const rotation = rotation_transform::from_axis_angle(n_clicked, angle);
+                vec3 const p_rotated = rotation * p_to_p_clicked;
+                p_shape = p_rotated + p_clicked;
+				if (deformer_parameters.remaillage){
 					modified.push_back(k);
-			}
+				}
+            }
 		}
 
 	}
