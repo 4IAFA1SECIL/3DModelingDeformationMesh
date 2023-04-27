@@ -16,6 +16,8 @@
 
 #include "deformers/deformers.hpp"
 
+#include "helpers/portable-file-dialogs.h"
+
 using cgp::mesh_drawable;
 
 
@@ -60,6 +62,8 @@ struct scene_structure : scene_inputs_generic {
 	cgp::timer_event_periodic timer_update_normal; // timer with periodic events used to update the normals
 
 
+	std::string saved_mesh_file;
+
 
 	// ****************************** //
 	// Functions
@@ -76,9 +80,6 @@ struct scene_structure : scene_inputs_generic {
 	void keyboard_event();
 	void idle_frame();
 
+	std::string save_mesh();
+
 };
-
-
-
-
-

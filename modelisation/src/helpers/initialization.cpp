@@ -2,7 +2,10 @@
 #include "initialization.hpp"
 #include "../environment.hpp"
 
+#include "portable-file-dialogs.h"
+
 using namespace cgp;
+using namespace pfd;
 
 mesh initialize_plane()
 {
@@ -11,7 +14,7 @@ mesh initialize_plane()
 }
 mesh initialize_cylinder()
 {
-	float const h = 1.5f;
+	float const h = 1.5f; 
     float const radius = 0.4f;
     float const N_sample_circumferential = 80;
     float const N_sample_length = int( h/(2*3.14f*radius)*(N_sample_circumferential-1) + 1 + 0.5f );
@@ -28,12 +31,16 @@ mesh initialize_cube()
     int const N=40;
     return mesh_primitive_cubic_grid({0,0,0},{1,0,0},{1,1,0},{0,1,0}, {0,0,1},{1,0,1},{1,1,1},{0,1,1}, N, N, N);
 }
-mesh initialize_mesh()
+mesh initialize_mesh(mesh shape)
 {    
-    std::string const filename = project::path+"assets/cube.obj";
-    mesh shape = mesh_load_file_obj(filename);
-    for(auto& p : shape.position) 
-        p *= 1.0f;
+    auto selection = pfd::open_file("Select a file", ".",
+                                { "Obj Files", "*.obj",
+                                  "All Files", "*" },
+                                pfd::opt::multiselect).result();
+    if (!selection.empty()) {
+        shape = mesh_load_file_obj(selection[0]);
+        for(auto& p : shape.position)
+            p *= 1.f;
+    }
     return shape;
 }
-

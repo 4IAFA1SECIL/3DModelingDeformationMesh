@@ -2,6 +2,7 @@
 
 
 using namespace cgp;
+using namespace pfd;
 
 size_t previous_size = 0;
 
@@ -136,6 +137,18 @@ void scene_structure::mouse_scroll_event()
 		gui.deformer_parameters.falloff = std::max(gui.deformer_parameters.falloff + float(inputs.mouse.scroll) * 0.01f, 1e-6f);
 }
 
+std::string scene_structure::save_mesh() {
+	// Save the current position of the vertices
+	auto destination = pfd::save_file("Select a file", ".",
+								{ "OBJ Files", "*.obj",
+								"All Files", "*" },
+								pfd::opt::force_overwrite).result();
+
+	if (!destination.empty())
+		cgp::save_file_obj(destination, deforming_shape.shape);
+	return destination;
+}
+
 void deforming_shape_structure::new_shape(surface_type_enum type_of_surface)
 {
 
@@ -156,7 +169,7 @@ void deforming_shape_structure::new_shape(surface_type_enum type_of_surface)
 		shape = initialize_cube();
 		break;
 	case surface_mesh:
-		shape = initialize_mesh();
+		shape = initialize_mesh(shape);
 		break;
 	}
 

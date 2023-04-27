@@ -7,4 +7,4 @@ cgp::mesh initialize_plane();
 cgp::mesh initialize_cylinder();
 cgp::mesh initialize_sphere();
 cgp::mesh initialize_cube();
-cgp::mesh initialize_mesh();
+cgp::mesh initialize_mesh(cgp::mesh shape);

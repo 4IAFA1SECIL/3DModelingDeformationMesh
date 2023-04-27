@@ -258,9 +258,15 @@ void keyboard_callback(GLFWwindow* window, int key, int scancode, int action, in
 			std::cout << str_pretty(camera_model.matrix_view()) << std::endl;
 
 		}
+
+		// Press 'Ctrl + S' to save the current scene
+		if (key == GLFW_KEY_S && action == GLFW_PRESS && scene.inputs.keyboard.ctrl) {
+			scene.saved_mesh_file=scene.save_mesh();
+			if (!scene.saved_mesh_file.empty())
+				std::cout << "Scene saved in " + scene.saved_mesh_file << std::endl;
+			else
+				std::cout << "Scene not saved" << std::endl;
+		}
 	}
 
 }
-
-
-

@@ -1,3 +1,6 @@
+# ignore 
+modelisation/assets/*.obj
+modelisation/build/
 imgui.ini
 modelisation.exe
 modelisation.pdb
@@ -9,3 +12,7 @@ cgp/examples/02_marching_cubes/02_marching_cube_dynamic/02_marching_cube_dynamic
 cgp/examples/02_marching_cubes/02_marching_cube_dynamic/02_marching_cube_dynamic.pdb
 cgp/examples/02_marching_cubes/02_marching_cube_dynamic/mesh.obj
 modelisation/src/.vscode
+
+# sauf fichier
+!modelisation/assets/face.obj
+
