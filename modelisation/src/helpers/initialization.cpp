@@ -2,10 +2,10 @@
 #include "initialization.hpp"
 #include "../environment.hpp"
 
-#include "file_dialog.hpp"
+#include "portable-file-dialogs.h"
 
 using namespace cgp;
-using namespace file_dialog;
+using namespace pfd;
 
 mesh initialize_plane()
 {
@@ -33,9 +33,12 @@ mesh initialize_cube()
 }
 mesh initialize_mesh(mesh shape)
 {    
-    std::string mesh_path = file_dialog::get_file(false);
-    if (!mesh_path.empty()) {
-        shape = mesh_load_file_obj(mesh_path);
+    auto selection = pfd::open_file("Select a file", ".",
+                                { "Obj Files", "*.obj",
+                                  "All Files", "*" },
+                                pfd::opt::multiselect).result();
+    if (!selection.empty()) {
+        shape = mesh_load_file_obj(selection[0]);
         for(auto& p : shape.position)
             p *= 1.f;
     }

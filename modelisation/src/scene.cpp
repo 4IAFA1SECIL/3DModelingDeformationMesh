@@ -2,7 +2,7 @@
 
 
 using namespace cgp;
-using namespace file_dialog;
+using namespace pfd;
 
 
 
@@ -121,10 +121,14 @@ void scene_structure::mouse_scroll_event()
 
 std::string scene_structure::save_mesh() {
 	// Save the current position of the vertices
-	saved_mesh_file = file_dialog::get_file(true);
-	if (!saved_mesh_file.empty())
-		cgp::save_file_obj(saved_mesh_file, deforming_shape.shape);
-	return saved_mesh_file;
+	auto destination = pfd::save_file("Select a file", ".",
+								{ "OBJ Files", "*.obj",
+								"All Files", "*" },
+								pfd::opt::force_overwrite).result();
+
+	if (!destination.empty())
+		cgp::save_file_obj(destination, deforming_shape.shape);
+	return destination;
 }
 
 void deforming_shape_structure::new_shape(surface_type_enum type_of_surface)
