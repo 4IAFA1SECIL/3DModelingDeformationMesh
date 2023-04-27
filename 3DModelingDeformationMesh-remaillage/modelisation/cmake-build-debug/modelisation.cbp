@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="modelisation"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\cgp\;CMake Files\..\cgp\library\;CMake Files\..\cgp\library\third_party\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="modelisation">
+				<Option output="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/modelisation.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add directory="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src"/>
+					<Add directory="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library"/>
+					<Add directory="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/precompiled/glfw/windows/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 modelisation"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="modelisation/fast">
+				<Option output="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/modelisation.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_IMPL_OPENGL_LOADER_GLAD"/>
+					<Add directory="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src"/>
+					<Add directory="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library"/>
+					<Add directory="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/precompiled/glfw/windows/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 modelisation/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/cgp.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/cgp_parameters.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/array.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray/numarray.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray/test/test_numarray.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray/test/test_numarray.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack2.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack3.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/implementation/numarray_stack4.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/numarray_stack.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/numarray_stack_fwd.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/special_types/special_types.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/special_types/special_types.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/test/test_numarray_stack.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/array/numarray_stack/test/test_numarray_stack.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/base.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/basic_types/basic_types.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/basic_types/basic_types.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/error/error.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/error/error.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/rand/rand.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/rand/rand.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/stl/stl.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/string/string.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/string/string.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/base/types/types.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/containers.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid/grid.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid/grid_2D/grid_2D.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid/grid_3D/grid_3D.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid/test/test_grid.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid/test/test_grid.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid_stack/grid_stack.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid_stack/grid_stack_2D/grid_stack_2D.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid_stack/grid_stack_2D/test/test_grid_stack_2D.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/grid_stack/grid_stack_2D/test/test_grid_stack_2D.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/image/image.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/image/image.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/matrix_stack/matrix_stack.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/matrix_stack/matrix_stack_fwd.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/matrix_stack/special_types/definition/special_types.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/matrix_stack/special_types/definition/special_types.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/matrix_stack/special_types/special_types.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/offset_grid/offset_grid.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/containers/offset_grid/offset_grid.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/core.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/files/files.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/files/files.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/path/path.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/core/path/path.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/geometry.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/interpolation/interpolation.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/interpolation/interpolation.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/functions/mat_functions.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/functions/mat_functions.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/functions/test/test_vec_mat.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/functions/test/test_vec_mat.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/mat.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/mat2/mat2.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/mat2/mat2.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/mat3/mat3.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/mat3/mat3.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/mat4/mat4.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/mat4/mat4.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/test/test_matrix_stack.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/mat/test/test_matrix_stack.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/quaternion/quaternion.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/quaternion/quaternion.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/curve/curve.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/curve/curve.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/implicit/implicit.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/implicit/marching_cube/helper/marching_cubes_lut.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/implicit/marching_cube/helper/marching_cubes_lut.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/implicit/marching_cube/marching_cube.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/implicit/marching_cube/marching_cube.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/intersection/intersection.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/intersection/intersection.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/loader/loader.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/loader/obj/obj.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/mesh.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/primitive/mesh_primitive.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/primitive/mesh_primitive.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/structure/mesh.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/mesh/structure/mesh.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/noise/noise.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/noise/noise.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/shape.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain_grid_3D/spatial_domain_grid_3D.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/shape/spatial_domain/spatial_domain_grid_3D/spatial_domain_grid_3D.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/affine/affine.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/affine/affine/affine.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/affine/affine/affine.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/affine/affine_rt/affine_rt.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/affine/affine_rt/affine_rt.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/affine/affine_rts/affine_rts.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/affine/affine_rts/affine_rts.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/frame/frame.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/frame/frame.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/projection/projection.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/projection/projection.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/rotation_transform/rotation_transform.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/rotation_transform/test/test_rotation.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/transform/transform.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/vec/vec.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/vec/vec2/vec2.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/vec/vec3/vec3.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/geometry/vec/vec4/vec4.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person/camera_controller_first_person.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person/camera_controller_first_person.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person_euler/camera_controller_first_person_euler.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_first_person_euler/camera_controller_first_person_euler.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_generic_base/camera_controller_generic_base.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_generic_base/camera_controller_generic_base.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit/camera_controller_orbit.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit/camera_controller_orbit.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit_euler/camera_controller_orbit_euler.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_controller/camera_controller_orbit_euler/camera_controller_orbit_euler.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_first_person/camera_first_person.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_first_person_euler/camera_first_person_euler.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_generic_base/camera_generic_base.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_model.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_orbit/camera_orbit.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_orbit/camera_orbit.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/camera_orbit_euler/camera_orbit_euler.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/common_functions/common_functions.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_model/common_functions/common_functions.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_projection/camera_projection.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/camera/camera_projection/camera_projection.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/curve_drawable/curve_drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/curve_drawable_dynamic_extend/curve_drawable_dynamic_extend.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/environment/environment.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/environment/environment.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/hierarchy_mesh_drawable/hierarchy_mesh_drawable.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/hierarchy_mesh_drawable/hierarchy_mesh_drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/material/material.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/material/material_mesh_drawable_phong/material_mesh_drawable_phong.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/mesh_drawable/mesh_drawable.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/mesh_drawable/mesh_drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/special_drawable/skybox_drawable/skybox_drawable.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/special_drawable/skybox_drawable/skybox_drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/special_drawable/special_drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/special_drawable/trajectory_drawable/trajectory_drawable.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/special_drawable/trajectory_drawable/trajectory_drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/drawable/triangles_drawable/triangles_drawable.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/emscripten/emscripten.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/emscripten/emscripten.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/graphics.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/imgui/imgui.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/imgui/imgui.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/input_devices/input_devices.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/input_devices/input_devices.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/buffer/buffer.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/buffer/ebo/ebo.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/buffer/ebo/ebo.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/buffer/opengl_buffer/opengl_buffer.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/buffer/vbo/vbo.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/debug/debug.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/debug/debug.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/opengl.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/shaders/cache_uniform_location/cache_uniform_location.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/shaders/shaders.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/shaders/shaders.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/texture/texture.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/texture/texture.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/uniform/uniform.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/opengl/uniform/uniform.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/picking/picking.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/picking/picking_plane/picking_plane.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/picking/picking_spheres/picking_spheres.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/picking/picking_structure/picking_structure.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/time.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_basic/timer_basic.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_event_periodic/timer_event_periodic.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_fps/timer_fps.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/timer/timer_interval/timer_interval.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/tracker/tracker.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/time/tracker/velocity_tracker/velocity_tracker.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/window/window.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/graphics/window/window.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/cgp/opengl_include.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/glad/opengl33/glad.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/glad/opengl33/glad.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/glad/opengl33/khrplatform.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/glad/opengl46/glad.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/glad/opengl46/glad.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/glad/opengl46/khrplatform.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imconfig.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_demo.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_draw.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_impl_glfw.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_impl_glfw.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_impl_opengl3.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_impl_opengl3.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_internal.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imgui_widgets.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imstb_rectpack.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imstb_textedit.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/imgui/imstb_truetype.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/jpeg/jpgd.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/jpeg/jpgd.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/jpeg/jpge.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/jpeg/jpge.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/lodepng/lodepng.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/lodepng/lodepng.h">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/simplexnoise/simplexnoise1234.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/cgp/library/third_party/src/simplexnoise/simplexnoise1234.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/shaders/mesh/frag.glsl">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/shaders/mesh/vert.glsl">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/shaders/single_color/frag.glsl">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/shaders/single_color/vert.glsl">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/deformers/deformers.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/deformers/deformers.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/environment.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/environment.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/helpers/gui.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/helpers/gui.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/helpers/initialization.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/helpers/initialization.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/helpers/picking_visual.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/helpers/picking_visual.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/main.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/scene.cpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/src/scene.hpp">
+			<Option target="modelisation"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/../cgp/library/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\cgp\library\"/>
+		</Unit>
+		<Unit filename="C:/Users/thour/Documents/Git/IAFAM1/S8/projet/3DModelingDeformationMesh-remaillage/modelisation/../cgp/library/third_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\cgp\library\third_party\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
